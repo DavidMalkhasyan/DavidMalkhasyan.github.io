@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>David Malkhasyan — Software Engineer</title>
+  <meta name="description" content="David Malkhasyan, software engineer working across the full stack, focused on JavaScript, TypeScript and backend engineering: Node.js, Express, PostgreSQL, Prisma, MongoDB, Docker.">
+  <meta property="og:title" content="David Malkhasyan — Software Engineer">
+  <meta property="og:description" content="Full-stack applications with authentication, role-based access, databases, real-time communication and REST APIs.">
+  <meta property="og:image" content="assets/home.jpg">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%2316130f'/><text x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial' font-weight='800' font-size='28' fill='%23ff5a1f'>DM</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+</head>
+<body>
+  <div class="progress" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="logo" href="#top" aria-label="David Malkhasyan, home">DM<span>.</span></a>
+    <nav aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-end">
+      <span class="status"><i></i>Open to work</span>
+      <button class="theme" type="button" aria-label="Toggle dark mode">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-top">
+        <div class="hero-title">
+          <p class="eyebrow reveal">Software Engineer · Full-stack, backend focus</p>
+          <h1 class="name" aria-label="David Malkhasyan">
+            <span class="line"><span>David</span></span>
+            <span class="line"><span>Malkhasyan<em>.</em></span></span>
+          </h1>
+        </div>
+        <figure class="portrait">
+          <div class="arch">
+            <img src="assets/david.webp" alt="Portrait of David Malkhasyan" width="900" height="724" fetchpriority="high">
+          </div>
+          <svg class="badge" viewBox="0 0 120 120" aria-hidden="true">
+            <defs><path id="badge-circle" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0"/></defs>
+            <text><textPath href="#badge-circle" textLength="282">OPEN TO WORK · SOFTWARE ENGINEER ·</textPath></text>
+          </svg>
+        </figure>
+      </div>
+
+      <div class="hero-grid">
+        <div class="intro reveal">
+          <p class="lede">
+            I build full-stack apps in JavaScript and TypeScript, with a growing focus on the backend:
+            <span class="rotator" aria-live="polite"><span class="rot-word">REST APIs</span></span>
+          </p>
+          <div class="cta">
+            <a class="btn primary magnetic" href="#work">See my work <span aria-hidden="true">↓</span></a>
+            <a class="btn ghost magnetic" href="#contact">Get in touch</a>
+          </div>
+        </div>
+
+        <figure class="flow-card reveal" aria-label="How data moves through my restaurant platform">
+          <figcaption><span class="dot-live"></span>Request path · Fourchette Buffet</figcaption>
+          <ol class="flow">
+            <li class="node" data-tip="Admin dashboard where staff edit menus, pages and orders"><b>CMS</b><small>Next.js</small></li>
+            <li class="wire" aria-hidden="true"></li>
+            <li class="node" data-tip="REST endpoints, role checks, Zod validation"><b>API</b><small>Express</small></li>
+            <li class="wire" aria-hidden="true"></li>
+            <li class="node" data-tip="Typed queries and transactions over 35 models"><b>ORM</b><small>Prisma</small></li>
+            <li class="wire" aria-hidden="true"></li>
+            <li class="node" data-tip="Normalized schema with committed migrations"><b>DB</b><small>PostgreSQL</small></li>
+            <li class="wire" aria-hidden="true"></li>
+            <li class="node" data-tip="Server-rendered public site in Armenian, Russian and English"><b>Site</b><small>Next.js SSR</small></li>
+          </ol>
+          <pre class="log" aria-hidden="true"><code></code></pre>
+        </figure>
+      </div>
+
+      <a class="scroll-hint" href="#work" aria-label="Scroll to work"><span></span></a>
+    </section>
+
+    <!-- TICKER -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>TypeScript</span><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>Prisma</span><span>MongoDB</span><span>Redis</span><span>Socket.IO</span><span>React</span><span>Next.js</span><span>Docker</span><span>Linux</span><span>C</span>
+        <span>TypeScript</span><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>Prisma</span><span>MongoDB</span><span>Redis</span><span>Socket.IO</span><span>React</span><span>Next.js</span><span>Docker</span><span>Linux</span><span>C</span>
+      </div>
+    </div>
+
+    <!-- FEATURED WORK -->
+    <section id="work" class="section work">
+      <header class="section-head reveal">
+        <span class="index">01</span>
+        <h2>Featured project</h2>
+        <p>A complete product, from data model to deployment.</p>
+      </header>
+
+      <article class="project">
+        <div class="project-copy reveal">
+          <h3>Fourchette Buffet</h3>
+          <p class="project-tag">Restaurant management platform</p>
+          <p>
+            A multi-restaurant platform. Each restaurant gets its own trilingual website on a custom domain
+            and a dashboard to manage menus, pages, media and promotions. Customers browse a QR menu, fill a cart
+            and order delivery. Couriers get assigned, and staff are notified on Telegram.
+          </p>
+          <ul class="chips">
+            <li>Multi-tenant + custom domains</li>
+            <li>Armenian · Russian · English</li>
+            <li>Admin / Manager / Editor roles</li>
+            <li>QR menu &amp; analytics</li>
+            <li>Cart, delivery &amp; couriers</li>
+            <li>Telegram notifications</li>
+            <li>Automatic HTTPS</li>
+          </ul>
+          <div class="cta">
+            <!-- TODO: add a "Live demo" button here once the site is deployed -->
+            <a class="btn primary magnetic" href="mailto:Malkhasyandavid2@gmail.com?subject=Fourchette%20Buffet%20code%20walkthrough">Request a code walkthrough <span aria-hidden="true">↗</span></a>
+            <a class="btn ghost magnetic" href="https://github.com/DavidMalkhasyan" target="_blank" rel="noopener">GitHub profile</a>
+          </div>
+        </div>
+
+        <div class="showcase reveal">
+          <div class="browser">
+            <div class="browser-bar">
+              <span class="lights"><i></i><i></i><i></i></span>
+              <div class="tabs" role="tablist" aria-label="Screens">
+                <button role="tab" aria-selected="true" data-shot="0">Home</button>
+                <button role="tab" aria-selected="false" data-shot="1">Menu</button>
+                <button role="tab" aria-selected="false" data-shot="2">Gallery</button>
+                <button role="tab" aria-selected="false" data-shot="3">CMS</button>
+              </div>
+            </div>
+            <div class="screens">
+              <img src="assets/home.jpg" alt="Fourchette Buffet homepage with the headline Good food. Your way." class="is-on" width="1440" height="900">
+              <img src="assets/menu.jpg" alt="Menu page with today's dishes, category filters and add-to-cart buttons" width="1440" height="900" loading="lazy">
+              <img src="assets/gallery.jpg" alt="Gallery page with restaurant photographs" width="1440" height="900" loading="lazy">
+              <img src="assets/cms-login.jpg" alt="Sign-in screen of the restaurant CMS" width="1440" height="900" loading="lazy">
+            </div>
+          </div>
+          <div class="phone" aria-hidden="true">
+            <img src="assets/mobile-menu-hy.jpg" alt="" width="780" height="1688" loading="lazy">
+          </div>
+        </div>
+      </article>
+
+      <dl class="stats">
+        <div class="reveal"><dt>Releases</dt><dd data-count="6">6</dd></div>
+        <div class="reveal"><dt>Database models</dt><dd data-count="35">35</dd></div>
+        <div class="reveal"><dt>Lines of TypeScript</dt><dd data-count="14.7" data-suffix="k">14.7k</dd></div>
+        <div class="reveal"><dt>Automated tests</dt><dd data-count="24">24</dd></div>
+      </dl>
+
+      <details class="release reveal">
+        <summary><span>Release log</span><small>How it was built, version by version</small></summary>
+        <ol class="timeline">
+          <li><time datetime="2026-09-29">Sep 29</time>
+            <div><span class="ver">v1.0</span><h4>Data-driven website &amp; admin dashboard</h4>
+            <p>Express REST API, Prisma schema on PostgreSQL, server-rendered Next.js site and a CMS with roles.</p></div></li>
+          <li><time datetime="2026-09-30">Sep 30</time>
+            <div><span class="ver">v1.1</span><h4>Today's menu, media &amp; account tools</h4>
+            <p>Daily menus, optional homepage sections, image uploads and self-service account settings.</p></div></li>
+          <li><time datetime="2026-09-30">Sep 30</time>
+            <div><span class="ver">v2.0</span><h4>Multiple restaurants &amp; custom domains</h4>
+            <p>One platform serving many restaurants, each on its own domain, plus QR menus and analytics.</p></div></li>
+          <li><time datetime="2026-09-30">Sep 30</time>
+            <div><span class="ver">v3.0</span><h4>Cart, delivery &amp; couriers</h4>
+            <p>Online ordering, courier assignment and instant order notifications through a Telegram bot.</p></div></li>
+          <li><time datetime="2026-09-30">Sep 30</time>
+            <div><span class="ver">deploy</span><h4>Production setup</h4>
+            <p>Docker Compose, Caddy with automatic HTTPS per domain, server setup script and a deploy guide.</p></div></li>
+          <li><time datetime="2026-10-04">Oct 4</time>
+            <div><span class="ver">hardening</span><h4>Eight review passes</h4>
+            <p>Fixes from code, security, database, React, SEO, accessibility, performance and deployment reviews.</p></div></li>
+        </ol>
+      </details>
+    </section>
+
+    <!-- MORE PROJECTS -->
+    <section id="projects" class="section more">
+      <header class="section-head reveal">
+        <span class="index">02</span>
+        <h2>More projects</h2>
+        <p>Each one built to learn a different backend problem.</p>
+      </header>
+
+      <ul class="cards">
+        <li class="card reveal" style="--c: var(--gold)">
+          <span class="card-no">02.1</span>
+          <h3>Banking System</h3>
+          <p>Multiple accounts per user with currencies, deposits, withdrawals and account-to-account transfers
+            inside PostgreSQL transactions. JWT auth, Redis caching, audit logs and admin dashboards.</p>
+          <span class="card-tags">TypeScript · Express · PostgreSQL · Redis · Docker</span>
+          <a class="card-link" href="https://github.com/DavidMalkhasyan/Bank-System" target="_blank" rel="noopener" aria-label="Banking System on GitHub">↗</a>
+        </li>
+        <li class="card reveal" style="--c: var(--moss)">
+          <span class="card-no">02.2</span>
+          <h3>Live Chat</h3>
+          <p>Real-time chat platform with private messages, chat rooms, authentication, online presence
+            and typing indicators.</p>
+          <span class="card-tags">Socket.IO · Node.js · MongoDB · React · Redux</span>
+          <a class="card-link" href="https://github.com/DavidMalkhasyan/LIVECHAT" target="_blank" rel="noopener" aria-label="Live Chat on GitHub">↗</a>
+        </li>
+        <li class="card reveal" style="--c: var(--cobalt)">
+          <span class="card-no">02.3</span>
+          <h3>RBAC User Management</h3>
+          <p>Full-stack application with role-based access control: users can view, edit or delete data
+            depending on their role.</p>
+          <span class="card-tags">Node.js · Express · MongoDB · React</span>
+          <a class="card-link" href="https://github.com/DavidMalkhasyan/rbac-user-management" target="_blank" rel="noopener" aria-label="RBAC User Management on GitHub">↗</a>
+        </li>
+        <li class="card reveal" style="--c: var(--accent)">
+          <span class="card-no">02.4</span>
+          <h3>Job Board</h3>
+          <p>A job platform dedicated to interns and entry-level developers, where companies find motivated beginners.
+            Built as a team project.</p>
+          <span class="card-tags">Team project · Frontend + backend</span>
+          <a class="card-link" href="https://github.com/DavidMalkhasyan/junior-job-board-backend" target="_blank" rel="noopener" aria-label="Job Board on GitHub">↗</a>
+        </li>
+      </ul>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+      <header class="section-head reveal">
+        <span class="index">03</span>
+        <h2>Skills</h2>
+        <p>What I work with, and where I've used it.</p>
+      </header>
+
+      <div class="stack">
+        <article class="stack-group wide reveal">
+          <header><span class="stack-path">/backend</span><h3>Backend</h3></header>
+          <ul class="tools">
+            <li><img src="assets/icons/nodejs.svg" alt="" width="28" height="28">Node.js</li>
+            <li><img class="mono" src="assets/icons/express.svg" alt="" width="28" height="28">Express</li>
+            <li><img class="mono" src="assets/icons/socketio.svg" alt="" width="28" height="28">Socket.IO</li>
+            <li><span class="glyph">{ }</span>REST APIs</li>
+            <li><span class="glyph">JWT</span>Auth &amp; RBAC</li>
+          </ul>
+          <p class="proof">Layered APIs (routes, controllers, services, repositories) with role checks on every request, JWT and session auth, and real-time messaging.</p>
+        </article>
+        <article class="stack-group reveal">
+          <header><span class="stack-path">/data</span><h3>Databases</h3></header>
+          <ul class="tools">
+            <li><img src="assets/icons/postgresql.svg" alt="" width="28" height="28">PostgreSQL</li>
+            <li><img class="mono" src="assets/icons/prisma.svg" alt="" width="28" height="28">Prisma</li>
+            <li><img src="assets/icons/mongodb.svg" alt="" width="28" height="28">MongoDB</li>
+            <li><img src="assets/icons/redis.svg" alt="" width="28" height="28">Redis</li>
+          </ul>
+          <p class="proof">A 35-model normalized schema, money transfers inside transactions, Redis cache-aside.</p>
+        </article>
+        <article class="stack-group reveal">
+          <header><span class="stack-path">/web</span><h3>Frontend</h3></header>
+          <ul class="tools">
+            <li><img src="assets/icons/typescript.svg" alt="" width="28" height="28">TypeScript</li>
+            <li><img src="assets/icons/javascript.svg" alt="" width="28" height="28">JavaScript</li>
+            <li><img src="assets/icons/react.svg" alt="" width="28" height="28">React</li>
+            <li><img class="mono" src="assets/icons/nextjs.svg" alt="" width="28" height="28">Next.js</li>
+            <li><img src="assets/icons/redux.svg" alt="" width="28" height="28">Redux</li>
+          </ul>
+          <p class="proof">Server-rendered trilingual sites, admin dashboards and responsive UIs.</p>
+        </article>
+        <article class="stack-group reveal">
+          <header><span class="stack-path">/ops</span><h3>DevOps</h3></header>
+          <ul class="tools">
+            <li><img src="assets/icons/docker.svg" alt="" width="28" height="28">Docker</li>
+            <li><img class="mono" src="assets/icons/linux.svg" alt="" width="28" height="28">Linux</li>
+            <li><img src="assets/icons/git.svg" alt="" width="28" height="28">Git</li>
+            <li><img class="mono" src="assets/icons/bash.svg" alt="" width="28" height="28">Bash</li>
+          </ul>
+          <p class="proof">Docker Compose stacks, automatic HTTPS with Caddy, server setup scripts.</p>
+        </article>
+        <article class="stack-group reveal">
+          <header><span class="stack-path">/quality</span><h3>Testing</h3></header>
+          <ul class="tools">
+            <li><img src="assets/icons/playwright.svg" alt="" width="28" height="28">Playwright</li>
+            <li><span class="glyph">Z</span>Zod</li>
+          </ul>
+          <p class="proof">Input validation, live-database integration tests and browser tests.</p>
+        </article>
+      </div>
+
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section education">
+      <header class="section-head reveal">
+        <span class="index">04</span>
+        <h2>Education</h2>
+        <p>A degree in software engineering, then an intensive academy for low-level CS and the modern web stack.</p>
+      </header>
+
+      <ol class="edu">
+        <li class="edu-item edu-feature reveal">
+          <div class="edu-meta">
+            <span class="edu-years">2024 – 2025</span>
+            <h3>Picsart Academy</h3>
+            <p class="edu-program">Software Engineering / Full-Stack Development</p>
+            <p>Intensive software development program focused on computer science fundamentals and full-stack
+              web development. Built individual and team full-stack applications combining frontend, backend and databases.</p>
+          </div>
+          <div class="edu-topics">
+            <h4>Computer science &amp; low-level programming</h4>
+            <ul class="cs-grid">
+              <li><b>C</b><span>programming</span></li>
+              <li><b>CPU</b><span>architecture &amp; cache</span></li>
+              <li><b>Heap</b><span>memory management</span></li>
+              <li><b>OS</b><span>multitasking &amp; concepts</span></li>
+              <li><b>ld</b><span>compilation &amp; linking</span></li>
+              <li><b>x86</b><span>Assembly basics</span></li>
+            </ul>
+            <h4>Web development</h4>
+            <ul class="edu-chips">
+              <li>JavaScript</li><li>TypeScript</li><li>React</li><li>Redux Toolkit</li><li>Node.js</li><li>Express</li>
+              <li>REST APIs</li><li>MongoDB</li><li>PostgreSQL</li><li>Authentication</li><li>Authorization</li><li>Real-time apps</li>
+            </ul>
+          </div>
+        </li>
+        <li class="edu-item reveal">
+          <span class="edu-years">2014 – 2019</span>
+          <div>
+            <h3>South Ural State University</h3>
+            <p class="edu-program">Bachelor's degree · Software Engineering</p>
+          </div>
+          <span class="edu-badge">B.Sc.</span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+      <header class="section-head reveal">
+        <span class="index">05</span>
+        <h2>About</h2>
+      </header>
+      <div class="about-body reveal">
+        <p class="big">
+          I'm a software engineer who keeps drifting toward the backend, where the data,
+          the rules and the hard problems live.
+        </p>
+        <p>
+          I hold a bachelor's degree in Software Engineering and completed Picsart Academy's full-stack program.
+          My main stack is React, Next.js, TypeScript, Node.js, Express, PostgreSQL, Prisma, MongoDB, Docker and Linux.
+          I build applications with authentication, role-based access control, databases, real-time communication
+          and REST APIs, and I learn by building complete things that someone could actually use.
+        </p>
+        <p>
+          I'm looking for a <strong>software engineering role</strong>, ideally on a team that takes
+          backend engineering and code review seriously.
+        </p>
+
+        <div class="now">
+          <span class="eyebrow"><span class="dot-live"></span>Currently focusing on</span>
+          <ul>
+            <li>Backend architecture</li>
+            <li>Databases</li>
+            <li>System design</li>
+            <li>Design patterns</li>
+            <li>Distributed systems</li>
+            <li>Scalable applications</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <p class="eyebrow reveal">06 · Contact</p>
+      <h2 class="reveal">Let's build<br>something<em>.</em></h2>
+      <div class="contact-grid">
+        <div class="contact-main reveal">
+          <a class="mail magnetic" href="mailto:Malkhasyandavid2@gmail.com">Malkhasyandavid2@gmail.com <span aria-hidden="true">→</span></a>
+          <ul class="channels">
+            <li><a href="tel:+37494675161"><span class="ch-label">Phone</span><span class="ch-value">+374 94 675161</span><span class="ch-arrow" aria-hidden="true">↗</span></a></li>
+            <li><a href="https://t.me/OFF1QQAAA" target="_blank" rel="noopener"><span class="ch-label">Telegram</span><span class="ch-value">@OFF1QQAAA</span><span class="ch-arrow" aria-hidden="true">↗</span></a></li>
+            <li><a href="https://www.linkedin.com/in/david-malkhasyan-7594692b8/" target="_blank" rel="noopener"><span class="ch-label">LinkedIn</span><span class="ch-value">david-malkhasyan</span><span class="ch-arrow" aria-hidden="true">↗</span></a></li>
+            <li><a href="https://github.com/DavidMalkhasyan" target="_blank" rel="noopener"><span class="ch-label">GitHub</span><span class="ch-value">DavidMalkhasyan</span><span class="ch-arrow" aria-hidden="true">↗</span></a></li>
+          </ul>
+        </div>
+        <a class="qr reveal" href="https://t.me/OFF1QQAAA" target="_blank" rel="noopener" aria-label="Message me on Telegram">
+          <img src="assets/telegram-qr.png" alt="QR code for Telegram user @OFF1QQAAA" width="560" height="555" loading="lazy">
+          <span>Scan to message me on Telegram</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>© 2026 David Malkhasyan</span>
+    <span>Hand-built with HTML, CSS &amp; JavaScript.</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
